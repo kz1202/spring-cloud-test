@@ -1,0 +1,17 @@
+# 使用するポート番号
+server:
+  port: 8081
+
+# DB接続情報
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/cloud-demo-db
+    username: cloud-demo
+    password: cloud-demo
+
+# Eurekaの情報
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
